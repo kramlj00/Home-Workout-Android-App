@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D122C"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/workoutTitle"
+        android:layout_width="292dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/workout" />
+
+    <TextView
+        android:id="@+id/txtTrophyNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="40dp"
+        android:text="You have earned:   "
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/img_trophy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/workoutTitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/txtTrophyNo"
+        android:background="@drawable/trophy1"/>
+
+    <TextView
+        android:id="@+id/trophy_info"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="i"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:layout_below="@+id/workoutTitle"
+        android:layout_toRightOf="@+id/img_trophy"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circlebackground"
+        android:onClick="ShowPopup"
+        />
+
+    <TextView
+        android:id="@+id/txtdesc"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="9dp"
+        android:text="Press play button to start exercise."
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold|italic" />
+    <ImageView
+        android:id="@+id/btnTraining"
+        android:layout_width="234dp"
+        android:layout_height="237dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnExercises"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:text="Exercise"
+                android:textColor="@android:color/white"
+                app:cornerRadius="2dp"
+                app:shadowColor="#3A3738"
+                app:shadowEnabled="true"
+                app:shadowHeight="2dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnSetting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:text="Setting"
+                android:textColor="@android:color/white"
+                app:cornerRadius="2dp"
+                app:fButtonColor="#6FB874"
+                app:shadowColor="#63565B"
+                app:shadowEnabled="true"
+                app:shadowHeight="2dp" />
+
+
+        </LinearLayout>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnCalendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="8dp"
+            android:text="Calendar"
+            android:textColor="@android:color/white"
+            app:cornerRadius="0dp"
+            app:fButtonColor="#468EBB"
+            app:shadowColor="#5E5459"
+            app:shadowEnabled="true"
+            app:shadowHeight="2dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

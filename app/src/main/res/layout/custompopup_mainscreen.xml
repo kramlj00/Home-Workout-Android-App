@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="#0D122C"
+    android:padding="10dp"
+    android:paddingStart="20dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/txtClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:textColor="#FFFFFF"
+        android:text="X"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@drawable/circlebackground"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btnBMI"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bmi_icon" />
+
+        <TextView
+            android:id="@+id/set"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/btnBMI"
+            android:background="@drawable/settings_icon" />
+
+        <TextView
+            android:id="@+id/btnQuotes"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/set"
+            android:background="@drawable/quotes_icon" />
+
+        <TextView
+            android:id="@+id/btnListExercise"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/btnQuotes"
+            android:background="@drawable/exelist" />
+
+
+        <TextView
+            android:id="@+id/txtBMI"
+            android:layout_width="75dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/btnBMI"
+            android:text="      BMI Calculator"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/txtSet"
+            android:layout_width="75dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/set"
+            android:layout_toRightOf="@+id/txtBMI"
+            android:text="   Settings"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/txtQuotes"
+            android:layout_width="75dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/btnQuotes"
+            android:layout_toRightOf="@+id/txtSet"
+            android:text="     Quotes"
+            android:textColor="#FFFF" />
+
+        <TextView
+            android:id="@+id/txtExercise"
+            android:layout_width="75dp"
+            android:layout_height="42dp"
+            android:layout_below="@+id/btnListExercise"
+            android:layout_toRightOf="@+id/txtQuotes"
+            android:text="     Exercise\n         List"
+            android:textColor="#FFFF" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

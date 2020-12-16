@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewExercise">
+
+  <TextView
+      android:id="@+id/title"
+      android:text="NAME OF EXERCISE"
+      android:textColor="@android:color/white"
+      android:textSize="24sp"
+      android:gravity="center_vertical|center_horizontal"
+      android:background="#FEBFAB"
+      android:layout_width="match_parent"
+      android:layout_height="50dp" />
+
+  <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+      android:id="@+id/progressBar"
+      android:indeterminate="false"
+      android:layout_below="@+id/title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:mpb_progressStyle="horizontal"
+      app:mpb_progressBackgroundTint="@color/pink"
+      app:mpb_progressTint="@color/indigo"
+      style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"/>
+
+  <ImageView
+      android:id="@+id/detail_image"
+      android:layout_width="397dp"
+      android:layout_height="426dp"
+      android:layout_centerInParent="true" />
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:id="@+id/layout_get_ready"
+      android:visibility="invisible"
+      android:layout_centerInParent="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtGetReady"
+        android:text="GET READY"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtCountDown"
+        android:text="5"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+  <info.hoang8f.widget.FButton
+      android:id="@+id/btnStart"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="4dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginBottom="8dp"
+      android:text="START"
+      android:textColor="@android:color/white"
+      app:cornerRadius="0dp"
+      app:fButtonColor="#85AF68"
+      app:shadowColor="#DDBBCA"
+      app:shadowEnabled="true"
+      app:shadowHeight="2dp" />
+
+
+  <TextView
+      android:id="@+id/timer"
+      android:text=""
+      android:textStyle="bold"
+      android:textColor="@color/colorPrimary"
+      android:textSize="50sp"
+      android:layout_centerHorizontal="true"
+      android:layout_above="@+id/btnStart"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+</RelativeLayout>

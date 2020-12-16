@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boss.homeworkout">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.boss.homeworkout.ActivityHistory"></activity>
+        <activity android:name="com.boss.homeworkout.WorkoutList" />
+        <activity android:name="com.boss.homeworkout.WorkoutFinished" />
+        <activity android:name="com.boss.homeworkout.Quotes" />
+        <activity android:name="com.boss.homeworkout.BMICalcAct" />
+        <activity android:name="com.boss.homeworkout.MainActivity" />
+        <activity android:name="com.boss.homeworkout.Calendar" />
+        <activity android:name="com.boss.homeworkout.Daily_Training" />
+        <activity android:name="com.boss.homeworkout.SettingPage" />
+        <activity android:name="com.boss.homeworkout.ViewExercise" />
+        <activity android:name="com.boss.homeworkout.ListExercises" />
+
+        <receiver android:name="com.boss.homeworkout.AlarmNotificationReceiver" />
+
+        <activity android:name="com.boss.homeworkout.MainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

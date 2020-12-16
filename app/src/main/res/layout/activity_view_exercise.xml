@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewExercise">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="NAME OF EXERCISE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:layout_width="356dp"
+        android:layout_height="369dp"
+        android:layout_centerInParent="true" />
+
+    <info.hoang8f.widget.FButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnStart"
+        android:text="START"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fButtonColor="@color/colorPrimary"
+        app:shadowColor="@color/colorAccent"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp"
+        app:cornerRadius="0dp"
+        />
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:text="20"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

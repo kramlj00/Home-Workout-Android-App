@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingPage">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp">
+
+        <RadioGroup
+            android:id="@+id/rdiGroup"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdiEasy"
+                android:text="Easy"
+                android:layout_weight="1"
+                android:theme="@style/MyRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rdiMedium"
+                android:text="Medium"
+                android:layout_weight="1"
+                android:theme="@style/MyRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rdiHard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hard"
+                android:theme="@style/MyRadioButton" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/mode_info"
+            android:onClick="ShowPopup"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end"
+            android:text="?"
+            android:textAlignment="center"
+            android:textSize="22dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ToggleButton
+        android:id="@+id/switchAlarm"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker"
+        android:layout_marginTop="3dp"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_below="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TimePicker>
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/switchAlarm"
+        android:textColor="#090"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Alarm set for time : " />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        app:cornerRadius="2dp"
+        app:fButtonColor="#85AF68"
+        app:shadowColor="@color/colorAccent"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp" />
+
+</RelativeLayout>
